@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Roboto";
+}
+
+a{text-decoration: none;}
+
+/* header */
+
+.header{width: 340px; padding: 20px;}
+
+.header__container{
+    display: flex;
+    justify-content: end;
+}
+
+.header__ul{list-style-type: none; padding: 0;}
+
+.dark-theme-icon{margin-left: 10px;}
+
+
+/* main page */
+.main_page{
+    width: 340px;
+    height: 480px;
+}
+
+.logo__container{text-align: center;}
+
+.mirea-logo{width: 230px;}
+
+.header__title{
+    margin: 0;
+    font-size: 35px;
+    background: linear-gradient(to right, #0088FF, #5699D3);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header__subtitle{
+    font-weight: 300;
+    letter-spacing: 10px;
+    background: linear-gradient(to right, #3C3C3C, #666666);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* settings wrapper */
+.blob-img{
+    display: block;
+    margin: 0 auto;
+}
+
+.settings__wrapper{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dark__theme-wrapper{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.settings__wrapper h2{
+    background: linear-gradient(to right, #2F2F2F, #757575);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.change__logotype-wrapper{text-align: center;}
+
+#addLogo{
+    width: 270px;
+    border: none;
+    outline: none;
+    border-bottom: solid 2px #0099ff;
+}
+
+
+/* footer */
+.footer{
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+
+
+
+
+/* checkbox customize */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 19px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #0099ff;
+}
+
+input:checked+.slider:before {
+    transform: translateX(18px);
+}
+
+
+/* dark-theme */
+.dark-theme{
+    filter: invert(0.93) hue-rotate(180deg);
+}
+
+.dark-theme img {
+    filter: invert(1) hue-rotate(180deg);
+}

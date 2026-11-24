@@ -1,0 +1,12 @@
+.dark-theme {
+    filter: invert(0.93) hue-rotate(180deg);
+}
+
+.dark-theme img {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+.dark-theme *[style*="background"],
+.dark-theme [style*="background-image"] {
+    filter: invert(1) hue-rotate(180deg);
+}

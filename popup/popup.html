@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="popup.css">
+    <title>SDO Mirea Themes</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Меню
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://telegra.ph/Kak-zamenit-logotip-v-SDO-02-02" target="_blank">Как менять лого?</a></li>
+                        <li><a class="dropdown-item" href="https://online-edu.mirea.ru/login/" target="_blank">СДО МИРЭА</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-item-listener" href="#">Тёмная тема<img src="../images/darkthemeicon.png" class="dark-theme-icon" width="20px" alt="dark theme icon"></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="main_page">
+            <div class="logo__container">
+                <img src="../images/LogoMirea.svg" class="mirea-logo" alt="MIREA logo">
+                <h1 class="header__title">СДО МИРЭА</h1>
+                <h2 class="header__subtitle">кастомизация</h2>
+            </div>
+            <div class="settings__container">
+                <img src="../images/blob.svg" class="blob-img" alt="blob image">
+                <div class="settings__wrapper">
+                    <div class="dark__theme-wrapper">
+                        <h2 class="dark__theme-title">Тёмная тема:</h2>
+                        <label class="switch">
+                            <input type="checkbox" id="toggleTheme">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="change__logotype-wrapper">
+                        <h2>Загрузить логотип:</h2>
+                        <input type="text" id="addLogo">
+                        <!-- <button id="removeLogo">Удалить логотип</button> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>made by <a href="http://n3nsy.ru/" target="_blank">nensy</a></p>
+    </footer>
+
+
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
